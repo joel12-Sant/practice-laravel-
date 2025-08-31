@@ -38,6 +38,7 @@ services:
     container_name: laravel_app
     ports:
       - "8000:80"
+      - "5173:5173"  # Vite para hot reload
     volumes:
       - ./laravel:/var/www/html
     working_dir: /var/www/html
